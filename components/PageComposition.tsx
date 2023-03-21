@@ -33,7 +33,6 @@ export default function PageComposition({
     },
   };
   const title = metaTitle?.value as string;
-  console.log("PageComposition", composition);
   return (
     <>
       <Head>
