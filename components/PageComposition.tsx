@@ -27,12 +27,10 @@ export default function PageComposition({
   });
   const { serverRuntimeConfig } = getConfig();
   const { projectId, apiKey, apiHost } = serverRuntimeConfig;
-  const { metaTitle } = composition?.parameters || {
-    metaTitle: {
-      value: "title",
-    },
-  };
+  const { metaTitle } = composition?.parameters || {};
+
   const title = metaTitle?.value as string;
+
   return (
     <>
       <Head>
